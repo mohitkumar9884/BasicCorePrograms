@@ -2,6 +2,7 @@
 using BasicCorePrograms.LeapYear;
 using BasicCorePrograms.Power;
 using BasicCorePrograms.Harmonic;
+using BasicCorePrograms.NPrime;
 
 internal class Program
 {
@@ -29,6 +30,10 @@ internal class Program
                 case 4:
                 HarmonicNumber harmonicNumber = new HarmonicNumber();
                 harmonicNumber.Compute();
+                break;
+                case 5:
+                PrimeFactor primeFactor = new PrimeFactor();
+                primeFactor.Factorize();
                 break;
         }
     }
