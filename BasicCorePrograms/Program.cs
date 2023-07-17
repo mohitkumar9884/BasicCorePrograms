@@ -5,6 +5,7 @@ using BasicCorePrograms.Harmonic;
 using BasicCorePrograms.NPrime;
 using BasicCorePrograms.EvenOrOdd;
 using BasicCorePrograms.Compare;
+using BasicCorePrograms.CheckAlphabet;
 
 internal class Program
 {
@@ -12,7 +13,7 @@ internal class Program
     {
         Console.WriteLine("Welcome To Basic Core Programs");
         Console.WriteLine("Please chose any One program from below options");
-        Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowerOf2\n4.HarmonicNumber\n5.PrimeFactor\n6.EvenOdd\n7.LargestNumber");
+        Console.WriteLine("1.FlipCoin\n2.LeapYear\n3.PowerOf2\n4.HarmonicNumber\n5.PrimeFactor\n6.EvenOdd\n7.LargestNumber\n8.Alphabet");
         Console.WriteLine(" ");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
@@ -44,6 +45,10 @@ internal class Program
                 case 7:
                 CompareNumber compareNumber= new CompareNumber();
                 compareNumber.ThreeNumbers();
+                break;
+                case 8:
+                VowelConsonant vowelConsonant = new VowelConsonant();
+                vowelConsonant.CheckVC();
                 break;
         }
     }
