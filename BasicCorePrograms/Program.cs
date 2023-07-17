@@ -6,6 +6,7 @@ using BasicCorePrograms.NPrime;
 using BasicCorePrograms.EvenOrOdd;
 using BasicCorePrograms.Compare;
 using BasicCorePrograms.CheckAlphabet;
+using BasicCorePrograms.TwoSwap;
 
 internal class Program
 {
@@ -51,7 +52,8 @@ internal class Program
                 vowelConsonant.CheckVC();
                 break;
                 case 9:
-
+                SwapNumbers swapNumbers = new SwapNumbers();
+                swapNumbers.Swap();
                 break;
         }
     }
